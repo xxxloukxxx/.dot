@@ -38,5 +38,10 @@ chsh -s /usr/bin/fish
 
 ###################
 
+echo '### Install dmenu'
+sudo cp -fr dmenu /usr/bin
+
+###################
+
 echo '### Reconfigure locales'
 sudo dpkg-reconfigure locales

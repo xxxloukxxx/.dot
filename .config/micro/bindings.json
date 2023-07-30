@@ -1,0 +1,6 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "CtrlUnderscore": "lua:comment.comment",
+    "\u001b[P": "Delete",
+    "\u001b[4h": "ToggleOverwriteMode"   
+}

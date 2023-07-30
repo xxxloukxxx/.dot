@@ -38,12 +38,5 @@ chsh -s /usr/bin/fish
 
 ###################
 
-echo '### Install dmenu2'
-cd dmenu2
-sudo make clean install
-cd ..
-
-###################
-
 echo '### Reconfigure locales'
 sudo dpkg-reconfigure locales

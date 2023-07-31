@@ -15,16 +15,15 @@ cp -fr .Xresources ~/
 /usr/bin/xrdb .Xresources
 
 ###################
-
-echo '### greetd autologin'
-sudo sh -c 'echo "[terminal]"          >  /etc/greetd/config.toml'
-sudo sh -c 'echo "vt = 7"              >> /etc/greetd/config.toml'
-sudo sh -c 'echo "[default_session]"   >> /etc/greetd/config.toml'
-sudo sh -c 'echo "command=\"startx\""  >> /etc/greetd/config.toml'
-sudo sh -c 'echo "user=\"cedric\""     >> /etc/greetd/config.toml'
-sudo sh -c 'echo "[initial_session]"   >> /etc/greetd/config.toml'
-sudo sh -c 'echo "command=\"startx\""  >> /etc/greetd/config.toml'
-sudo sh -c 'echo "user=\"cedric\""     >> /etc/greetd/config.toml'
+# echo '### greetd autologin'
+# sudo sh -c 'echo "[terminal]"          >  /etc/greetd/config.toml'
+# sudo sh -c 'echo "vt = 7"              >> /etc/greetd/config.toml'
+# sudo sh -c 'echo "[default_session]"   >> /etc/greetd/config.toml'
+# sudo sh -c 'echo "command=\"startx\""  >> /etc/greetd/config.toml'
+# sudo sh -c 'echo "user=\"cedric\""     >> /etc/greetd/config.toml'
+# sudo sh -c 'echo "[initial_session]"   >> /etc/greetd/config.toml'
+# sudo sh -c 'echo "command=\"startx\""  >> /etc/greetd/config.toml'
+# sudo sh -c 'echo "user=\"cedric\""     >> /etc/greetd/config.toml'
 
 ###################
 

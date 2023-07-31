@@ -1,4 +1,4 @@
-# .dot
+# .dot : dmenu ... st ... greetd ... i3 ... nnn ...  
 
 On fresh debian testing install :) 
 

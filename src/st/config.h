@@ -162,33 +162,33 @@ float alphaUnfocused = 0.6;
 #endif // ALPHA_PATCH
 
 
-static const char *colorname[] = {
-  "#282c34", /* 0: black */
-  "#e06c75", /* 1: red */
-  "#98c379", /* 2: green */
-  "#d19a66", /* 3: yellow */
-  "#61afef", /* 4: blue */
-  "#c678dd", /* 5: magenta */
-  "#56b6c2", /* 6: cyan */
-  "#abb2bf", /* 7: white */
-  "#5c6370", /* 8: brblack */
-  "#e06c75", /* 9: brred */
-  "#98c379", /* 10: brgreen */
-  "#d19a66", /* 11: bryellow */
-  "#61afef", /* 12: brblue */
-  "#c678dd", /* 13: brmagenta */
-  "#56b6c2", /* 14: brcyan */
-  "#ffffff", /* 15: brwhite */
-};
+// static const char *colorname[] = {
+//   "#282c34", /* 0: black */
+//   "#e06c75", /* 1: red */
+//   "#98c379", /* 2: green */
+//   "#d19a66", /* 3: yellow */
+//   "#61afef", /* 4: blue */
+//   "#c678dd", /* 5: magenta */
+//   "#56b6c2", /* 6: cyan */
+//   "#abb2bf", /* 7: white */
+//   "#5c6370", /* 8: brblack */
+//   "#e06c75", /* 9: brred */
+//   "#98c379", /* 10: brgreen */
+//   "#d19a66", /* 11: bryellow */
+//   "#61afef", /* 12: brblue */
+//   "#c678dd", /* 13: brmagenta */
+//   "#56b6c2", /* 14: brcyan */
+//   "#ffffff", /* 15: brwhite */
+// };
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-unsigned int defaultcs = 7;
-unsigned int defaultrcs = 0;
+// unsigned int defaultfg = 7;
+// unsigned int defaultbg = 0;
+// unsigned int defaultcs = 7;
+// unsigned int defaultrcs = 0;
 
 
 /*
@@ -220,9 +220,59 @@ unsigned int defaultrcs = 257;
  * will reverse too. Another logic would only make the simple feature too
  * complex.
  */
+// static unsigned int defaultitalic = 7;
+// static unsigned int defaultunderline = 7;
+
+
+/////////
+
+/* Terminal colors (16 first used in escape sequence) */
+/* Terminal colors (16 first used in escape sequence) */
+static const char *colorname[] = {
+
+  /* 8 normal colors */
+  [0] = "#151515", /* black   */
+  [1] = "#ac4142", /* red     */
+  [2] = "#90a959", /* green   */
+  [3] = "#f4bf75", /* yellow  */
+  [4] = "#6a9fb5", /* blue    */
+  [5] = "#aa759f", /* magenta */
+  [6] = "#75b5aa", /* cyan    */
+  [7] = "#d0d0d0", /* white   */
+
+  /* 8 bright colors */
+  [8]  = "#505050", /* black   */
+  [9]  = "#ac4142", /* red     */
+  [10] = "#90a959", /* green   */
+  [11] = "#f4bf75", /* yellow  */
+  [12] = "#6a9fb5", /* blue    */
+  [13] = "#aa759f", /* magenta */
+  [14] = "#75b5aa", /* cyan    */
+  [15] = "#f5f5f5", /* white   */
+
+  /* special colors */
+  [256] = "#151515", /* background */
+  [257] = "#d0d0d0", /* foreground */
+};
+
+/*
+ * Default colors (colorname index)
+ * foreground, background, cursor
+ */
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+unsigned int defaultcs = 257;
+unsigned int defaultrcs = 257;
+
+/*
+ * Colors used, when the specific fg == defaultfg. So in reverse mode this
+ * will reverse too. Another logic would only make the simple feature too
+ * complex.
+ */
 static unsigned int defaultitalic = 7;
 static unsigned int defaultunderline = 7;
 
+//////////////////////////////
 
 #if VIM_BROWSE_PATCH
 unsigned int const currentBg = 6, buffSize = 2048;

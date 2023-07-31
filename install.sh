@@ -38,8 +38,9 @@ chsh -s /usr/bin/fish
 
 ###################
 
-echo '### Install dmenu'
-sudo cp -fr dmenu /usr/bin
+echo '### Install st & dmenu'
+sudo cp -fr bin/dmenu /usr/bin
+sudo cp -fr bin/st /usr/bin
 
 ###################
 

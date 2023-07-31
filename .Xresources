@@ -49,16 +49,3 @@ xterm*scrollKey:       true
 *.color14:    #9AEDFE
 *.color7:     #BFBFBF
 *.color15:    #E6E6E6
-
-
-! zutty
-Zutty.title:                   Zutty
-Zutty.geometry:                120x45
-Zutty.altScroll:               true
-Zutty.boldColors:              false
-Zutty.font:                    Hack
-Zutty.fontsize:                18
-Zutty.fontpath:                /home/cedric/.fonts:/usr/share/fonts
-Zutty.fg:                      #F8F8F2
-Zutty.bg:                      #282A36
-Zutty.cr:                      #0f0

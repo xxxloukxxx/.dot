@@ -2,7 +2,7 @@
 set $mod Mod4
 focus_follows_mouse no
 font pango:hack 12
-bindsym $mod+Return exec x-terminal-emulator
+bindsym $mod+Return exec st
 bindcode $mod+40 exec --no-startup-id dmenu_run -n -fn hack-12
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart

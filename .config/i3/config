@@ -23,6 +23,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec_always --no-startup-id xset b 0
 exec_always --no-startup-id numlockx on
 exec_always --no-startup-id feh --randomize --bg-fill ~/.w
+exec_always --no-startup-id /usr/bin/xrdb ~/.Xresources
 
 # Audio
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && pkill -RTMIN+10 i3blocks

@@ -14,7 +14,6 @@ echo '### cp dotfiles'
 cp -fr .config ~/
 cp -fr .vimrc ~/
 cp -fr .Xresources ~/
-/usr/bin/xrdb .Xresources
 
 ###################
 # echo '### greetd autologin'

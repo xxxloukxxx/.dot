@@ -105,9 +105,9 @@ bindsym $mod+r mode "resize"
 # Lock/Reboot/Shutdown
 set $modsys "(l)ock - (r)eboot - (s)hutdown"
 mode $modsys {
-		bindsym r exec --no-startup-id systemctl reboot
-		bindsym s exec --no-startup-id systemctl poweroff
-		bindsym l exec --no-startup-id i3lock -c 000000, mode "default"
+	bindsym r exec --no-startup-id systemctl reboot
+	bindsym s exec --no-startup-id systemctl poweroff
+	bindsym l exec --no-startup-id i3lock -c 000000, mode "default"
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }

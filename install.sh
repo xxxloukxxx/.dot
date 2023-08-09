@@ -50,5 +50,5 @@ cd ~
 git clone https://github.com/xxxloukxxx/.w
 
 ###################
-echo '### Some packages'
-echo "sudo apt install chromium chromium-l10n pandoc zathura evince okular npm xournalpp texlive-full libreoffice libreoffice-l10n-fr libreoffice-help-fr firefox-esr firefox-esr-l10n-fr btop lftp psmisc gimp gimp-help-fr krita krita-l10n flameshot
+### Some packages'
+### sudo apt install chromium chromium-l10n pandoc zathura evince okular npm xournalpp texlive-full libreoffice libreoffice-l10n-fr libreoffice-help-fr firefox-esr firefox-esr-l10n-fr btop lftp psmisc gimp gimp-help-fr krita krita-l10n flameshot

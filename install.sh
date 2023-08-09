@@ -10,6 +10,13 @@ sudo apt-get -y autoremove > /dev/null
 
 ###################
 
+echo '### Greetd Autologin'
+sudo sh -c 'echo "[initial_session]"   >> /etc/greetd/config.toml'
+sudo sh -c 'echo "command=\"startx\""  >> /etc/greetd/config.toml'
+sudo sh -c 'echo "user=\"cedric\""     >> /etc/greetd/config.toml'
+
+###################
+
 echo '### Change shell to fish'
 chsh -s /usr/bin/fish
 

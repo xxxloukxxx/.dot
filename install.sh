@@ -49,7 +49,9 @@ cd ..
 ###################
 
 echo '### Reconfigure locales'
-sudo dpkg-reconfigure locales
+# sudo dpkg-reconfigure locales
+sudo localectl set-locale fr_FR.UTF-8
+
 
 #### chromium chromium-l10n pandoc zathura evince okular npm xournalpp texlive-full libreoffice libreoffice-l10n-fr libreoffice-help-fr firefox-esr firefox-esr-l10n-fr btop lftp psmisc gimp gimp-help-fr krita krita-l10n flameshot
 

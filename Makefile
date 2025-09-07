@@ -1,10 +1,10 @@
-all : packages config term menu ohmyzsh
+all : packages term menu ohmyzsh config 
 
 packages:
 	sudo sh -c 'echo "cedric ALL=(ALL:ALL) NOPASSWD:ALL" > /etc/sudoers.d/cedric && chmod 0440 /etc/sudoers.d/cedric'
 	sudo apt-get -qq -y update
 	sudo apt-get -qq -y upgrade
-	sudo apt-get -qq -y install git make build-essential cmake ninja-build p7zip-full nnn vim vim-gtk3 zsh stterm ripgrep suckless-tools universal-ctags arandr curl wget tmux gettext unzip fzf rsync fd-find bat tree btop locales-all gcc silversearcher-ag pulseaudio pavucontrol caja flameshot trash-cli x11-utils libreadline-dev libx11-dev libxinerama-dev libxft-dev numlockx xdotool greetd xorg xinit bspwm sxhkd polybar fonts-font-awesome fonts-agave nodejs npm firmware-linux-free firmware-linux-nonfree
+	sudo apt-get -qq -y install git make build-essential cmake ninja-build p7zip-full nnn vim vim-gtk3 zsh stterm ripgrep suckless-tools universal-ctags arandr curl wget tmux gettext unzip fzf rsync fd-find bat tree btop locales-all gcc silversearcher-ag pulseaudio pavucontrol caja flameshot trash-cli x11-utils libreadline-dev libx11-dev libxinerama-dev libxft-dev numlockx xdotool greetd xorg xinit bspwm sxhkd polybar fonts-font-awesome fonts-agave nodejs npm firmware-linux-free firmware-linux-nonfree i3lock
 
 ohmyzsh:
 	sudo apt-get -qq -y install zsh
